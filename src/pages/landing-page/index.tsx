@@ -6,12 +6,15 @@ import imgWorkspace from '../../assets/images/vetor_workstation.svg';
 import imgRelax from '../../assets/images/vetor_relax.svg';
 import imgYesNo from '../../assets/images/vetor_yes_no.svg';
 import imgRedesSociais from '../../assets/images/vetor_redes_sociais.svg';
+import imgBeneficios from '../../assets/images/vetor_homem_tempo.svg';
+import iconRelogio from '../../assets/images/icone_relogio.svg';
 
 import {
   Container,
   TimeManagementSection,
   DefinitionSection,
   LosingTimeSection,
+  BenefitsSection,
 } from './styles';
 
 const LandingPage: React.FC = () => {
@@ -104,6 +107,60 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </LosingTimeSection>
+      <BenefitsSection>
+        <h2>Principais Benefícios</h2>
+        <ul>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Melhor gerenciamento de tarefas;</span>
+          </li>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Maior produtividade;</span>
+          </li>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Menores níveis de estresse;</span>
+          </li>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Melhor equilíbrio entre vida profissional e pessoal;</span>
+          </li>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Fim de prazos perdidos;</span>
+          </li>
+          <li>
+            <img
+              className="icone-relogio"
+              src={iconRelogio}
+              alt="Ícone relógio"
+            />
+            <span>Melhor qualidade do trabalho.</span>
+          </li>
+        </ul>
+        <img src={imgBeneficios} alt="Homem com um relógio e ampulheta" />
+      </BenefitsSection>
     </Container>
   );
 };

@@ -81,7 +81,7 @@ export const DefinitionSection = styled.section`
 `;
 
 export const LosingTimeSection = styled.section`
-  padding: 4rem 3.2rem 4rem 3.2rem;
+  padding: 4rem 3.2rem;
   overflow: auto;
   background-color: var(--color-background-blue-dark);
   color: var(--color-text-light);
@@ -114,6 +114,7 @@ export const LosingTimeSection = styled.section`
     border-radius: 1.6em;
     padding: 1.6rem;
     width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     > div {
       display: flex;
@@ -129,6 +130,49 @@ export const LosingTimeSection = styled.section`
     & p {
       margin-left: 1.6rem;
       margin-bottom: 0;
+    }
+  }
+`;
+
+export const BenefitsSection = styled.section`
+  padding: 4rem 3.2rem;
+  height: 100vh;
+  color: var(--color-text-dark);
+  position: relative;
+
+  & h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 7.2rem;
+    font-style: italic;
+    margin-bottom: 6.4rem;
+    margin-bottom: 4rem;
+  }
+
+  & img {
+    position: absolute;
+    right: 3.2rem;
+    top: 4rem;
+    z-index: -1;
+    height: 68rem;
+  }
+
+  & ul {
+    font-family: 'Exo', sans-serif;
+    font-size: 2.4rem;
+    font-style: italic;
+    list-style: none;
+    line-height: 8.8rem;
+
+    & li {
+      display: flex;
+      align-items: center;
+
+      > img.icone-relogio {
+        width: 2.4rem;
+        height: 2.4rem;
+        position: initial;
+        margin-right: 0.8rem;
+      }
     }
   }
 `;
