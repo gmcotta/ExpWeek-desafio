@@ -30,8 +30,15 @@ export const TimeManagementSection = styled.section`
     }
   }
 
-  & img {
+  & img:nth-child(2) {
     width: 100%;
+  }
+
+  & img:nth-child(3) {
+    position: absolute;
+    left: 0;
+    top: 70vh;
+    z-index: 2;
   }
 
   & span {
@@ -48,8 +55,8 @@ export const TimeManagementSection = styled.section`
 `;
 
 export const DefinitionSection = styled.section`
-  height: 47.2rem;
-  padding: 0 3.2rem;
+  overflow: auto;
+  padding: 4rem 3.2rem;
   background-color: var(--color-white);
   text-align: right;
   position: relative;
@@ -64,14 +71,64 @@ export const DefinitionSection = styled.section`
   & p {
     font-family: 'Judson', serif;
     font-size: 2.4rem;
-    margin-bottom: 4rem;
     width: 72%;
     float: right;
+
+    & + p {
+      margin-top: 4rem;
+    }
+  }
+`;
+
+export const LosingTimeSection = styled.section`
+  padding: 4rem 3.2rem 4rem 3.2rem;
+  overflow: auto;
+  background-color: var(--color-background-blue-dark);
+  color: var(--color-text-light);
+
+  & h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 7.2rem;
+    font-style: italic;
+    margin-bottom: 6.4rem;
+    text-align: center;
+    margin-bottom: 4rem;
   }
 
-  & img {
-    position: absolute;
-    left: 0;
-    top: -48%;
+  & p {
+    font-family: 'Judson', serif;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  > div.container-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+  }
+
+  & div.card {
+    background-color: var(--color-darkest-blue);
+    border-radius: 1.6em;
+    padding: 1.6rem;
+    width: 100%;
+
+    > div {
+      display: flex;
+    }
+
+    & h3 {
+      font-family: 'Exo', sans-serif;
+      font-size: 4.8rem;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+
+    & p {
+      margin-left: 1.6rem;
+      margin-bottom: 0;
+    }
   }
 `;
