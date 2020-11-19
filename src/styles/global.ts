@@ -20,5 +20,6 @@ export default createGlobalStyle`
     --color-text-dark: #212d51;
     --color-text-purple: #624cab;
     --color-background-primary-light: #fafbf9;
+    --color-white: #fff;
   }
 `;
