@@ -176,3 +176,65 @@ export const BenefitsSection = styled.section`
     }
   }
 `;
+
+export const HowToSection = styled.section`
+  padding: 4rem 3.2rem;
+  overflow: auto;
+  background-color: var(--color-background-gray-light);
+  color: var(--color-text-dark);
+
+  & h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 7.2rem;
+    font-style: italic;
+    margin-bottom: 6.4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  & p {
+    font-family: 'Judson', serif;
+    font-size: 2.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  & div.howto-card {
+    background-color: var(--color-white);
+    border-radius: 1.6em;
+    padding: 1.6rem;
+    width: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+
+    & + div {
+      margin-top: 3.2rem;
+    }
+
+    > div {
+      display: flex;
+    }
+
+    & h3 {
+      font-family: 'Exo', sans-serif;
+      font-size: 4.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    & img {
+      height: 32rem;
+      width: 32rem;
+    }
+
+    & div {
+      flex: 1;
+    }
+
+    & p {
+      margin-left: 1.6rem;
+      font-size: 2.8rem;
+
+      & + p {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+`;

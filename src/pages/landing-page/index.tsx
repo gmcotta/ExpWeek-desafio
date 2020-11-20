@@ -8,6 +8,14 @@ import imgYesNo from '../../assets/images/vetor_yes_no.svg';
 import imgRedesSociais from '../../assets/images/vetor_redes_sociais.svg';
 import imgBeneficios from '../../assets/images/vetor_homem_tempo.svg';
 import iconRelogio from '../../assets/images/icone_relogio.svg';
+import imgSemCelular from '../../assets/images/vetor_sem_celular.svg';
+import imgCalendario1 from '../../assets/images/vetor_calendario_relogio_1.svg';
+import imgAgenda from '../../assets/images/vetor_agenda.svg';
+import imgPensamento from '../../assets/images/vetor_pensamento.svg';
+import imgCalendario2 from '../../assets/images/vetor_calendario_relogio_2.svg';
+import imgAlvo from '../../assets/images/vetor_alvo.svg';
+import imgMultitarefas from '../../assets/images/vetor_multitarefas.svg';
+import imgGestora from '../../assets/images/vetor_gestora.svg';
 
 import {
   Container,
@@ -15,6 +23,7 @@ import {
   DefinitionSection,
   LosingTimeSection,
   BenefitsSection,
+  HowToSection,
 } from './styles';
 
 const LandingPage: React.FC = () => {
@@ -161,6 +170,182 @@ const LandingPage: React.FC = () => {
         </ul>
         <img src={imgBeneficios} alt="Homem com um relógio e ampulheta" />
       </BenefitsSection>
+      <HowToSection>
+        <h2>Como Fazer a Gestão do Tempo?</h2>
+        <p>Aqui vão algumas sugestões de como administrar o tempo:</p>
+        <div className="howto-card">
+          <h3>1. Diminua as distrações</h3>
+          <div>
+            <img src={imgSemCelular} alt="Símbolo de proibido usar celular" />
+            <div>
+              <p>
+                Para ter uma melhor organização pessoal e gestão do tempo,
+                diminua o tempo perdido com as distrações como Whats app, redes
+                sociais e até a leitura indiscriminada dos e-mails durante o dia
+                inteiro.
+              </p>
+              <p>
+                Uma dica é desabilitar as notificações de mensagens do celular e
+                alertas de e-mails, e reservar um ou dois momentos no seu dia
+                para checagem de mensagens, e-mails ou mídias sociais. Se você
+                for um “viciado” no celular, sugiro se esforçar um pouco e mudar
+                esse hábito, que além de prejudicar a sua organização do tempo,
+                afeta também a sua saúde.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>2. Planejamento e Revisão semanal</h3>
+          <div>
+            <div>
+              <p>
+                Para começar a semana de forma planejada, com melhor gestão de
+                tempo e produtividade, tenha um momento semanal para fazer um
+                planejamento de suas atividades da semana, analisar suas
+                pendências, seus projetos pessoais e até profissionais
+                engavetados.
+              </p>
+              <p>
+                Esse planejamento semanal poderá ser modificado, se necessário,
+                com o decorrer da semana.
+              </p>
+            </div>
+            <img src={imgCalendario1} alt="Imagem de um calendário e relógio" />
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>3. Faça uma agenda</h3>
+          <div>
+            <img src={imgAgenda} alt="Imagem de Agenda" />
+            <div>
+              <p>
+                Tenha uma agenda. É preciso ter uma agenda na qual você consiga
+                enxergar os compromissos do dia, da semana e até os mensais.
+              </p>
+              <p>
+                Use uma agenda de papel ou eletrônica, ou até uma planilha de
+                gestão do tempo, para organizar melhor suas tarefas e o prazo
+                que têm para concluí-las.
+              </p>
+              <p>
+                Mais uma coisa: revise essa agenda todo dia no início da manhã
+                ou no final do dia anterior (preferível) já veja sua programação
+                do dia que está por vir.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>4. Tire as pendências da cabeça</h3>
+          <div>
+            <div>
+              <p>
+                Anote as pendências, para não ficar perdendo tempo pensando
+                nelas - o que atrapalha muito a sua produtividade - e escolha um
+                momento para resolvê-las. Essas “pendências” ficam ocupando um
+                espaço importante do cérebro, cansa a cabeça e consome uma
+                energia danada.
+              </p>
+              <p>
+                Só para você fazer um paralelo, é como o celular procurando
+                sinal de wi-fi o tempo todo que ele está ligado. Isso consome
+                uma bateria danada, não é mesmo?
+              </p>
+            </div>
+            <img
+              src={imgPensamento}
+              alt="Imagem de uma nuvem representando pensamento"
+            />
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>5. Faça agora e não deixe para amanhã</h3>
+          <div>
+            <img src={imgCalendario2} alt="Imagem de calendário e relógio" />
+            <div>
+              <p>
+                Quando surgir uma tarefa que vai levar um tempo curto – como
+                passar um e-mail urgente--, faça naquela hora e já resolva a
+                questão. Isso se chama “não procrastinar”. Se for tomar um tempo
+                longo, planeje. Veja quanto tempo será necessário e planeje dias
+                ou blocos de tempo para resolver a questão. Assim você consegue
+                a otimização do tempo!
+              </p>
+              <p>
+                Não deixe para depois, porque senão isso poderá virar mais um
+                item da lista de coisas urgentes que você ainda não fez.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>6. Tenha foco</h3>
+          <div>
+            <div>
+              <p>
+                Não faça várias coisas ao mesmo tempo, comece e complete tarefa
+                a tarefa. Um estudo do Instituto de Psiquiatria da Universidade
+                de Londres comprovou que o estado multitarefa pode reduzir até
+                40% da produtividade.
+              </p>
+              <p>
+                É aquela mesma história do “dirigir” e atender o celular, a
+                atenção fica dividida e alguma parte do que está sendo executado
+                sai perdendo nisso. Neste caso, a atenção no trânsito – que
+                certamente que é o que merece uma prioridade nesse momento - é
+                prejudicada.
+              </p>
+            </div>
+            <img
+              src={imgAlvo}
+              alt="Imagem de um alvo acertado por uma flecha"
+            />
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>7. Saiba priorizar</h3>
+          <div>
+            <img
+              src={imgMultitarefas}
+              alt="Imagem de uma pessoa fazendo várias tarefas"
+            />
+            <div>
+              <p>
+                Analise suas tarefas do dia e siga o seu planejamento. Além
+                disso, considere as prioridades: saiba diferenciar o que é
+                urgente e importante, importante e não urgente, e veja se não
+                está classificando algo como “urgente e não importante” e sair
+                correndo ou colocando foco em algo que não deveria.
+              </p>
+              <p>
+                Para uma boa gestão de tempo e produtividade, o ideal seria
+                dedicar cerca de 70% naquilo que for “Importante e Não urgente”.
+                Sinal de Planejamento, organização, produtividade e eficiência.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="howto-card">
+          <h3>8. Seja gestor do próprio tempo</h3>
+          <div>
+            <div>
+              <p>
+                Cuidados com os pedidos de atenção de “1 minutinho” de outras
+                pessoas! Esses pedidos são verdadeiras ciladas para a gestão do
+                tempo e organização do trabalho.
+              </p>
+              <p>
+                Esse prazo nunca é real, e pode levar 30 ou 40 preciosos minutos
+                do tempo que você já não tinha. Organize essa conversa, olhe
+                para a sua agenda e veja onde você tem uma brecha, que não vai
+                atrapalhar o seu planejamento.
+              </p>
+            </div>
+            <img src={imgGestora} alt="Imagem de uma gestora e um relógio" />
+          </div>
+        </div>
+      </HowToSection>
     </Container>
   );
 };
