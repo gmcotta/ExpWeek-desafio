@@ -136,7 +136,7 @@ export const LosingTimeSection = styled.section`
 
 export const BenefitsSection = styled.section`
   padding: 4rem 3.2rem;
-  height: 100vh;
+  height: 80rem;
   color: var(--color-text-dark);
   position: relative;
 
@@ -236,5 +236,37 @@ export const HowToSection = styled.section`
         margin-top: 1.6rem;
       }
     }
+  }
+`;
+
+export const Footer = styled.footer`
+  padding: 3.2rem;
+  background-color: var(--color-darkest-blue);
+  color: var(--color-text-light);
+  font-family: 'Exo', sans-serif;
+  font-weight: 800;
+
+  & a {
+    text-decoration: none;
+    color: var(--color-text-light);
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      font-size: 3.2rem;
+    }
+
+    & a + a {
+      margin-left: 1.6rem;
+    }
+  }
+
+  & p {
+    font-size: 2.4rem;
+    margin-top: 1.6rem;
   }
 `;

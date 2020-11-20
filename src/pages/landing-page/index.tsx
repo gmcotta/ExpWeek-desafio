@@ -8,6 +8,8 @@ import imgYesNo from '../../assets/images/vetor_yes_no.svg';
 import imgRedesSociais from '../../assets/images/vetor_redes_sociais.svg';
 import imgBeneficios from '../../assets/images/vetor_homem_tempo.svg';
 import iconRelogio from '../../assets/images/icone_relogio.svg';
+import iconLinkedin from '../../assets/images/icone_linkedin.svg';
+import iconGithub from '../../assets/images/icone_github.svg';
 import imgSemCelular from '../../assets/images/vetor_sem_celular.svg';
 import imgCalendario1 from '../../assets/images/vetor_calendario_relogio_1.svg';
 import imgAgenda from '../../assets/images/vetor_agenda.svg';
@@ -24,6 +26,7 @@ import {
   LosingTimeSection,
   BenefitsSection,
   HowToSection,
+  Footer,
 } from './styles';
 
 const LandingPage: React.FC = () => {
@@ -34,7 +37,9 @@ const LandingPage: React.FC = () => {
           <h1>Gestão de tempo</h1>
           <p>
             “Com organização e tempo, acha-se o segredo de fazer tudo e bem
-            feito.” – Pitágoras
+            feito.”
+            <br />
+            Pitágoras
           </p>
         </div>
         <img src={imgGestaoTempo} alt="Imagem seção de gestão de tempo" />
@@ -346,6 +351,38 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </HowToSection>
+      <Footer>
+        <div>
+          <span>Gestão de tempo</span>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/gustavomatias/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={iconLinkedin} alt="Ícone do LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/gmcotta/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={iconGithub} alt="Ícone do GitHub" />
+            </a>
+          </div>
+        </div>
+        <p>
+          Landing page feita por Gustavo Matias.&nbsp;
+          <a
+            href="https://github.com/gmcotta/ExpWeek-desafio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Clique aqui&nbsp;
+          </a>
+          para acessar o repositório.
+        </p>
+      </Footer>
     </Container>
   );
 };
